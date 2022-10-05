@@ -1,0 +1,5 @@
+git status
+git log -1
+make clean
+ls
+make runTests
