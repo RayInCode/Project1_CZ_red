@@ -1,0 +1,37 @@
+Script started on 2022-10-05 23:55:48-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004h[lei@vm-instunix-05] (1)$ git status
+[?2004lOn branch DataWrangler
+Your branch is ahead of 'origin/DataWrangler' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlog[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h[lei@vm-instunix-05] (2)$ git log -1
+[?2004l[?1h=[33mcommit 664c36fa530778e173c365d7064493c0519b0833[m[33m ([m[1;36mHEAD -> [m[1;32mDataWrangler[m[33m)[m[m
+Author: Lei Yang <lei@vm-instunix-05.cs.wisc.edu>[m
+Date:   Wed Oct 5 23:53:39 2022 -0500[m
+[m
+    DataWrangler Version 1.0 with Book.java BookLoader.java DataWranglerTest.java and some test csv files[m
+[K[?1l>[?2004h[lei@vm-instunix-05] (3)$ make clean
+[?2004lrm *.class
+[?2004h[lei@vm-instunix-05] (4)$ ls
+[?2004lBook.java        books.csv              IBookLoader.java          IISBNValidator.java  Makefile   test4.csv
+BookLoader.java  DataWranglerTest.java  IBookMapperBackend.java   IterableMapADT.java  test2.csv
+BookMapper.java  IBook.java             IBookMapperFrontend.java  log                  test3.csv
+[?2004h[lei@vm-instunix-05] (5)$ make renTests
+[?2004lmake: *** No rule to make target 'renTests'.  Stop.
+[?2004h[lei@vm-instunix-05] (6)$ make renTests[K[K[K[K[K[K[KunTests
+[?2004ljavac DataWranglerTest.java 
+java DataWranglerTest
+true
+true
+true
+true
+true
+[?2004h[lei@vm-instunix-05] (7)$ make clea[K[K[K[K[K[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2022-10-05 23:56:41-05:00 [COMMAND_EXIT_CODE="0"]
