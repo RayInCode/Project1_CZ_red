@@ -1,0 +1,4 @@
+ratings_count,title,authors,bookID,average_rating,isbn,isbn13,language_code,  num_pages,publisher,text_reviews_count,publication_date
+2095690,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling/Mary GrandPre,1,4.57,439785960,9780439785969,eng,652,Scholastic Inc.,27591,9/16/2006
+2153167,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling/Mary GrandPre,2,4.49,439358078,9780439358071,eng,870,Scholastic Inc.,29221,9/1/2004
+6333,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,4,4.42,439554896,9780439554893,eng,352,Scholastic,244,11/1/2003
