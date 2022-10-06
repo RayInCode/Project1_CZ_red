@@ -1,16 +1,10 @@
-// --== CS400 Project One File Header ==--
-// Name: Haotong Xin
-// CSL Username: haotong
-// Email: hxin8@wisc.edu
-// Lecture #: 002
-// Notes to Grader: <any optional extra notes to your grader>
 import java.util.NoSuchElementException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
 public class HashtableMap<KeyType, ValueType>
-    implements IterableMapADT<KeyType, ValueType>, IISBNValidator {
+    implements IterableMapADT<KeyType,ValueType>, IISBNValidator {
   protected LinkedList[] map;
 
   /**
@@ -167,25 +161,9 @@ public class HashtableMap<KeyType, ValueType>
   }
 
   /**
-   * build an iterator for the HashMap
-   */
-  public Iterator iterator() {
-    ArrayList<Object> values = new ArrayList();
-    for (LinkedList list : map) {
-      if (list != null) {
-        for (Object node : list) {
-          values.add(((Node) node).getValue());
-        }
-      }
-    }
-    Iterator iterator = values.iterator();
-    return iterator;
-  }
-   /**
    * tests whether it the code is a valid ISBN13 code
    * @return true if it is valid, false otherwise
    */
-  @Override
   public boolean validate(String isbn13) {
     int x1=Integer.valueOf(isbn13.substring(0,1));
     int x2=Integer.valueOf(isbn13.substring(1,2));
@@ -206,4 +184,13 @@ public class HashtableMap<KeyType, ValueType>
     }
     return false;
   }
+
+  /**
+   * builds an iterator of HashtableMap
+   */
+  @Override
+  public Iterator<ValueType> iterator() {
+    return new HashtableMapIterator(map);
+  }
 }
+
